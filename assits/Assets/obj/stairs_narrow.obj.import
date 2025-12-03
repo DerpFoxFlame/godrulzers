@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dj36sunhm8wjc"
+path="res://.godot/imported/stairs_narrow.obj-34b869216105486c8aea347c84dd20df.mesh"
+
+[deps]
+
+files=["res://.godot/imported/stairs_narrow.obj-34b869216105486c8aea347c84dd20df.mesh"]
+
+source_file="res://assits/Assets/obj/stairs_narrow.obj"
+dest_files=["res://.godot/imported/stairs_narrow.obj-34b869216105486c8aea347c84dd20df.mesh", "res://.godot/imported/stairs_narrow.obj-34b869216105486c8aea347c84dd20df.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false
