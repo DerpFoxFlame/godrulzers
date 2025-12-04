@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://bfi12iouyyopn"]
+
+[ext_resource type="PackedScene" uid="uid://bo15uvdaxgkit" path="res://assits/Assets/fbx/floor_dirt_small_weeds.fbx" id="1_ed1ba"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ed1ba"]
+size = Vector3(2, 0.11743164, 2)
+
+[node name="floor_dirt_small_weeds" instance=ExtResource("1_ed1ba")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0018920898, -0.03552246, -0.0011291504)
+shape = SubResource("BoxShape3D_ed1ba")
