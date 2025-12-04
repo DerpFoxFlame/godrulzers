@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://dd2tj10dgmf8f"]
+[gd_scene load_steps=18 format=3 uid="uid://dd2tj10dgmf8f"]
 
 [ext_resource type="PackedScene" uid="uid://b6jkayylqe6nb" path="res://assits/Assets/gltf/floor_dirt_large_rocky.gltf" id="1_q5onr"]
 [ext_resource type="PackedScene" uid="uid://wfjp0qjhyehs" path="res://assits/Assets/gltf/floor_dirt_small_A.gltf" id="2_jhx03"]
@@ -12,8 +12,30 @@
 [ext_resource type="PackedScene" uid="uid://dcasspom6355a" path="res://assits/Assets/gltf/rubble_large.gltf" id="10_7iits"]
 [ext_resource type="PackedScene" uid="uid://b8dk64m7er24h" path="res://assits/Models/FBX format/dirt.fbx" id="11_oo54l"]
 [ext_resource type="PackedScene" uid="uid://duhxwob05b3hq" path="res://assits/Models/FBX format/stones.fbx" id="12_kpybi"]
+[ext_resource type="PackedScene" uid="uid://dknuy5hiyr2e3" path="res://scenes/player.tscn" id="13_jhx03"]
+[ext_resource type="PackedScene" uid="uid://bnwc8jmq64k7" path="res://scenes/pf_floor_dirt_large_2.tscn" id="13_o8fc1"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_o8fc1"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_xo05s"]
+sky_material = SubResource("ProceduralSkyMaterial_o8fc1")
+
+[sub_resource type="Environment" id="Environment_dss4m"]
+background_mode = 2
+sky = SubResource("Sky_xo05s")
+tonemap_mode = 2
+glow_enabled = true
 
 [node name="Node3D" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_dss4m")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
+shadow_enabled = true
 
 [node name="envierment" type="Node" parent="."]
 
@@ -53,9 +75,6 @@ transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -1.8
 [node name="floor_dirt_small_C2" parent="envierment" instance=ExtResource("5_dss4m")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.883, 2.7, -6.932)
 
-[node name="floor_dirt_large2" parent="envierment" instance=ExtResource("4_xo05s")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.814955, 2.7, -9.633977)
-
 [node name="floor_dirt_small_B2" parent="envierment" instance=ExtResource("3_o8fc1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2951968, 0, 4.081314)
 
@@ -67,3 +86,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.8764725, 2.7, -9.513584)
 
 [node name="stones2" parent="envierment" instance=ExtResource("12_kpybi")]
 transform = Transform3D(0.5662768, 0, 0.8242151, 0, 1, 0, -0.8242151, 0, 0.5662768, -6.837094, 2.6867843, -10.183527)
+
+[node name="floor_dirt_large2" parent="envierment" instance=ExtResource("13_o8fc1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.8734164, 2.6996255, -9.681364)
+
+[node name="Player" parent="." instance=ExtResource("13_jhx03")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.498716, 2.6628027, -9.372041)
+
+[node name="Camera3D" type="Camera3D" parent="Player"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6341071, 4.2459564)
