@@ -35,11 +35,11 @@ transform = Transform3D(0.9047453, 0, 0.425953, 0, 1, 0, -0.425953, 0, 0.9047453
 [node name="rubble_half3" parent="envierment" instance=ExtResource("9_2lf6f")]
 transform = Transform3D(-0.04619986, 0, -0.99893296, 0, 1, 0, 0.99893296, 0, -0.04619986, -1.0502765, 0, -7.4641533)
 
-[node name="rubble_half3" parent="envierment/rubble_half3" instance=ExtResource("9_2lf6f")]
-transform = Transform3D(0.09535943, 0, 0.9954439, 0, 1, 0, -0.9954439, 0, 0.09535943, 0.23455, 0, -0.19983351)
+[node name="rubble_half5" parent="envierment" instance=ExtResource("9_2lf6f")]
+transform = Transform3D(0.9899761, 0, -0.14124703, 0, 1, 0, 0.14124703, 0, 0.9899761, -0.8614924, 0, -7.220621)
 
-[node name="rubble_half3" parent="envierment/rubble_half3/rubble_half3" instance=ExtResource("9_2lf6f")]
-transform = Transform3D(0.9985148, 0, -0.054497123, 0, 1, 0, 0.054497123, 0, 0.9985148, -0.6102717, 0, -4.3802357)
+[node name="rubble_half4" parent="envierment" instance=ExtResource("9_2lf6f")]
+transform = Transform3D(0.9808082, 0, -0.1949881, 0, 1, 0, 0.1949881, 0, 0.9808082, -0.8469515, 0, -11.643148)
 
 [node name="floor_dirt_small_weeds2" parent="envierment" instance=ExtResource("8_pm21f")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.4110518, 0, 6.0218506)
@@ -64,3 +64,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7033156, 0, 5.4489193)
 
 [node name="floor_dirt_large_rocky2" parent="envierment" instance=ExtResource("1_q5onr")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.8764725, 2.7, -9.513584)
+
+[node name="stones2" parent="envierment" instance=ExtResource("12_kpybi")]
+transform = Transform3D(0.5662768, 0, 0.8242151, 0, 1, 0, -0.8242151, 0, 0.5662768, -6.837094, 2.6867843, -10.183527)
