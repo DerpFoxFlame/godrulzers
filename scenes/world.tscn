@@ -76,7 +76,7 @@ transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -1.8
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.883, 2.7, -6.932)
 
 [node name="floor_dirt_small_B2" parent="envierment" instance=ExtResource("3_o8fc1")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2951968, 0, 4.081314)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.705, 2.7, -5.0024376)
 
 [node name="floor_dirt_small_A2" parent="envierment" instance=ExtResource("2_jhx03")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7033156, 0, 5.4489193)

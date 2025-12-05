@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://b2evxxl8pwaah"]
+
+[ext_resource type="PackedScene" uid="uid://cjcna07f2s46c" path="res://assits/Assets/fbx/rubble_large.fbx" id="1_rv5mh"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qv0h0"]
+size = Vector3(6.793087, 3.4597473, 1.8403931)
+
+[node name="rubble_large" instance=ExtResource("1_rv5mh")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.05376625, 1.7555237, -0.13702393)
+shape = SubResource("BoxShape3D_qv0h0")
