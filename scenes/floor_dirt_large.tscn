@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://cr1erng74vbcv"]
+
+[ext_resource type="PackedScene" uid="uid://dmjm6b1rfdo3k" path="res://assits/Assets/fbx/floor_dirt_large.fbx" id="1_5hetp"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5hetp"]
+size = Vector3(4, 0.11743164, 4)
+
+[node name="floor_dirt_large" instance=ExtResource("1_5hetp")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0018920898, -0.03552246, -0.0011291504)
+shape = SubResource("BoxShape3D_5hetp")
