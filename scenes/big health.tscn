@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://b32k7br7ltlk1"]
+
+[ext_resource type="PackedScene" uid="uid://jpfhgcdny4cx" path="res://assits/Assets/fbx/bottle_B_brown.fbx" id="1_6jkkt"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_q2u8w"]
+radius = 0.18457031
+height = 0.89453125
+
+[node name="bottle_B_brown" instance=ExtResource("1_6jkkt")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0018920898, 0.4449463, -0.0011291504)
+shape = SubResource("CapsuleShape3D_q2u8w")
