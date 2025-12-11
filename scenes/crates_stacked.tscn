@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://0rut08co8a0i"]
+
+[ext_resource type="PackedScene" uid="uid://v1d8x0g125lb" path="res://assits/Assets/fbx/crates_stacked.fbx" id="1_uxdji"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_fx687"]
+size = Vector3(0.96984863, 0.9897766, 0.96069336)
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_pjesr"]
+radius = 0.32861328
+height = 0.9173584
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_uxdji"]
+size = Vector3(1.5113792, 0.62140274, 1.0164795)
+
+[node name="crates_stacked" instance=ExtResource("1_uxdji")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
+transform = Transform3D(0.99470997, 0, 0.10272309, 0, 1, 0, -0.10272309, 0, 0.99470997, 0.4618847, 0.49165344, 0.5503366)
+shape = SubResource("BoxShape3D_fx687")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="StaticBody3D" index="1"]
+transform = Transform3D(0.99470997, 0, 0.10272309, 0, 1, 0, -0.10272309, 0, 0.99470997, -0.37486508, 0.37391663, 0.5335759)
+shape = SubResource("CapsuleShape3D_pjesr")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="StaticBody3D" index="2"]
+transform = Transform3D(0.98735017, 0, 0.1585544, 0, 1, 0, -0.1585544, 0, 0.98735017, -0.2297868, 0.3202523, -0.38390058)
+shape = SubResource("BoxShape3D_uxdji")
