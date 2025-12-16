@@ -7,6 +7,8 @@ size = Vector3(1, 1.0065918, 1)
 
 [node name="table_small_decorated_B" instance=ExtResource("1_7byt8")]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="1"]
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.50756836, 0)
 shape = SubResource("BoxShape3D_56dod")
