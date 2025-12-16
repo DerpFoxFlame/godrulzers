@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://c4n4a6d6fts41"]
+
+[ext_resource type="PackedScene" uid="uid://dwg0p2rytvgyy" path="res://assits/Assets/fbx/pillar.fbx" id="1_fv82l"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_01pxi"]
+height = 4.0040283
+radius = 0.7636719
+
+[node name="pillar" instance=ExtResource("1_fv82l")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.9871216, 0)
+shape = SubResource("CylinderShape3D_01pxi")
