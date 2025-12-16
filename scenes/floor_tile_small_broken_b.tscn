@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://6tkcamolbsfp"]
+
+[ext_resource type="PackedScene" uid="uid://bslifob3ogch5" path="res://assits/Assets/fbx/floor_tile_small_broken_B.fbx" id="1_3ajtu"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_itenw"]
+size = Vector3(0.020507813, 0.020507813, 0.0014038086)
+
+[node name="floor_tile_small_broken_B" instance=ExtResource("1_3ajtu")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1"]
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, -1.1920929e-05, 99.99999, 0, -99.99999, -1.1920929e-05, 0, -0.027465818, 3.274181e-09)
+shape = SubResource("BoxShape3D_itenw")

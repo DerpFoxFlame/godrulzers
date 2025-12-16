@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://chiywq8q8e514"]
+
+[ext_resource type="PackedScene" uid="uid://6xh7y5oq0rba" path="res://assits/Assets/fbx/floor_tile_small.fbx" id="1_s6anu"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_8j5w4"]
+size = Vector3(0.020507813, 0.020507813, 0.0014038086)
+
+[node name="floor_tile_small" instance=ExtResource("1_s6anu")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1"]
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="StaticBody3D" index="0"]
+transform = Transform3D(100, 0, 0, 0, -1.1920929e-05, 99.99999, 0, -99.99999, -1.1920929e-05, 0, -0.027465818, 3.274181e-09)
+shape = SubResource("BoxShape3D_8j5w4")
