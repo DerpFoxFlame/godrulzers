@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://b2evxxl8pwaah" path="res://scenes/rubble_large.tscn" id="1_mkg55"]
 [ext_resource type="PackedScene" uid="uid://buccfcjst0bce" path="res://scenes/rubble_half.tscn" id="2_wghwv"]
-[ext_resource type="PackedScene" uid="uid://bfi12iouyyopn" path="res://scenes/floor_dirt_small_weeds.tscn" id="3_wghwv"]
+[ext_resource type="PackedScene" uid="uid://bfi12iouyyopn" path="res://scenes/floors/floor_dirt_small_weeds.tscn" id="3_wghwv"]
 
 [node name="struchter one" type="Node3D"]
 

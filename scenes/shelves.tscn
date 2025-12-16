@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://cry2g51ihnow8"]
+
+[ext_resource type="PackedScene" uid="uid://cm541fgxju3ik" path="res://assits/Assets/fbx/shelves.fbx" id="1_wx7st"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_tcfds"]
+size = Vector3(2.006836, 0.19824219, 0.49816895)
+
+[node name="shelves" instance=ExtResource("1_wx7st")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.1007081, 0.50036454)
+shape = SubResource("BoxShape3D_tcfds")
+
+[node name="StaticBody3D2" type="StaticBody3D" parent="." index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.8193495, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D2" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.7819586, 0.49796093)
+shape = SubResource("BoxShape3D_tcfds")
