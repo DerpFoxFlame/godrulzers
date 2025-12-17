@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://ctfgdq35844cx"]
+
+[ext_resource type="PackedScene" uid="uid://ly0hnkk07lri" path="res://assits/Assets/fbx/wall_cracked.fbx" id="1_tuxy5"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_whqh5"]
+size = Vector3(3.9960938, 4.025696, 1)
+
+[node name="wall_cracked" instance=ExtResource("1_tuxy5")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.9986393, 0)
+shape = SubResource("BoxShape3D_whqh5")

@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://dgs7pnyrheadp"]
+
+[ext_resource type="PackedScene" uid="uid://dx325gto6n4ub" path="res://assits/Assets/fbx/trunk_small_A.fbx" id="1_fg2cj"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wmk6b"]
+size = Vector3(0.6816406, 0.47094727, 0.56152344)
+
+[node name="trunk_small_A" instance=ExtResource("1_fg2cj")]
+
+[node name="Area3D" type="Area3D" parent="." index="1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.24621582, 0)
+shape = SubResource("BoxShape3D_wmk6b")
