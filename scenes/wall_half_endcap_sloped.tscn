@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://bd5r1ksyl3oo3"]
+
+[ext_resource type="PackedScene" uid="uid://dawbw7v6ljkop" path="res://assits/Assets/fbx/wall_half_endcap_sloped.fbx" id="1_errew"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_ygghs"]
+points = PackedVector3Array(0, 0.005, 0.002498042, 0, -0.005, 0.002498042, 0, 0.005, 0, -0.009001566, 0.005, 0.04, 0, -0.005, 0, -0.009001566, -0.005, 0.04, -0.02, 0.005, 0, -0.02, 0.005, 0.04, -0.02, -0.005, 0, -0.02, -0.005, 0.04)
+
+[node name="wall_half_endcap_sloped" instance=ExtResource("1_errew")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1"]
+transform = Transform3D(100, 0, 0, 0, -1.1920929e-05, 99.99999, 0, -99.99999, -1.1920929e-05, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
+transform = Transform3D(1.0000001, 0, 0, 0, 1.0000001, -1.4210855e-14, 0, 1.4210855e-14, 1.0000001, 0, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_ygghs")

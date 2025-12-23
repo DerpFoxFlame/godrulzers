@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://deg7lhto15p8x"]
+
+[ext_resource type="PackedScene" uid="uid://bei1jaopo5a1f" path="res://assits/Assets/fbx/wall_window_open_scaffold.fbx" id="1_wsooq"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6hav6"]
+size = Vector3(4.024414, 4.026123, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_41y1k"]
+size = Vector3(1.3261719, 1.2880859, 1.138916)
+
+[node name="wall_window_open_scaffold" instance=ExtResource("1_wsooq")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.991982, 0)
+shape = SubResource("BoxShape3D_6hav6")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="StaticBody3D" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.9492188, 0)
+shape = SubResource("BoxShape3D_41y1k")

@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://3hbimi3pakqe"]
+
+[ext_resource type="PackedScene" uid="uid://da7s8ewm71qdr" path="res://assits/Assets/fbx/wall_half.fbx" id="1_rcydk"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_avxow"]
+size = Vector3(1.9955444, 4.007721, 1)
+
+[node name="wall_half" instance=ExtResource("1_rcydk")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.997511, 1.9963626, 0)
+shape = SubResource("BoxShape3D_avxow")

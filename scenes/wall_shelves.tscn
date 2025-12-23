@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://chwi3qd66ogd1"]
+
+[ext_resource type="PackedScene" uid="uid://dpi1xxf0yrsnc" path="res://assits/Assets/fbx/wall_shelves.fbx" id="1_i14dg"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_v4nkf"]
+size = Vector3(4.0253906, 3.9990234, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_upk3q"]
+size = Vector3(2.046875, 1, 1)
+
+[node name="wall_shelves" instance=ExtResource("1_i14dg")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0053284, 0)
+shape = SubResource("BoxShape3D_v4nkf")
+
+[node name="Area3D" type="Area3D" parent="." index="2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2119702, 0.36322594)
+shape = SubResource("BoxShape3D_upk3q")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Area3D" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.721424, 0.30644166)
+shape = SubResource("BoxShape3D_upk3q")
