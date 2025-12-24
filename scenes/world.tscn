@@ -1,8 +1,9 @@
-[gd_scene load_steps=10 format=3 uid="uid://dd2tj10dgmf8f"]
+[gd_scene load_steps=11 format=3 uid="uid://dd2tj10dgmf8f"]
 
 [ext_resource type="PackedScene" uid="uid://juacl8k4x6wh" path="res://scenes/floors/floor_tile_large.tscn" id="4_k0juu"]
 [ext_resource type="PackedScene" uid="uid://75lfvye1j7o" path="res://scenes/wall.tscn" id="5_71j4m"]
 [ext_resource type="PackedScene" uid="uid://b60kj1upn5de" path="res://scenes/trunk_medium_c.tscn" id="6_qfnet"]
+[ext_resource type="PackedScene" uid="uid://brqk06wqbu86j" path="res://scenes/wall_window_open.tscn" id="7_i7141"]
 [ext_resource type="PackedScene" uid="uid://b8dk64m7er24h" path="res://assits/Models/FBX format/dirt.fbx" id="11_oo54l"]
 [ext_resource type="PackedScene" uid="uid://duhxwob05b3hq" path="res://assits/Models/FBX format/stones.fbx" id="12_kpybi"]
 [ext_resource type="PackedScene" uid="uid://dknuy5hiyr2e3" path="res://scenes/player.tscn" id="13_jhx03"]
@@ -71,7 +72,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 2)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, -2)
 
 [node name="wall" parent="envierment" instance=ExtResource("5_71j4m")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, -8)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.8572197, 0, -8)
 
 [node name="wall4" parent="envierment" instance=ExtResource("5_71j4m")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, -8)
@@ -90,3 +91,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.398716, 0.049926758, -2.57
 
 [node name="Camera3D" type="Camera3D" parent="Player"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6341071, 4.2459564)
+
+[node name="wall_window_open" parent="." instance=ExtResource("7_i7141")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, -8)
