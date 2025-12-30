@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://b6wun4m8jagew"]
+[gd_scene load_steps=22 format=3 uid="uid://b6wun4m8jagew"]
 
 [ext_resource type="PackedScene" uid="uid://b2evxxl8pwaah" path="res://scenes/rubble_large.tscn" id="1_mkg55"]
 [ext_resource type="PackedScene" uid="uid://buccfcjst0bce" path="res://scenes/rubble_half.tscn" id="2_wghwv"]
@@ -6,26 +6,173 @@
 [ext_resource type="PackedScene" uid="uid://cr1erng74vbcv" path="res://scenes/floors/floor_dirt_large.tscn" id="4_rlkdy"]
 [ext_resource type="PackedScene" uid="uid://lvb2b7w8dy42" path="res://scenes/floors/floor_dirt_large_rocky.tscn" id="5_r6xa6"]
 [ext_resource type="PackedScene" uid="uid://by7ahi5vox3d3" path="res://scenes/floors/floor_dirt_small_a.tscn" id="6_fll4c"]
+[ext_resource type="PackedScene" uid="uid://wn7yuf66lyft" path="res://scenes/trunk_large_c.tscn" id="7_r6xa6"]
+[ext_resource type="PackedScene" uid="uid://dahw151wmtcyt" path="res://scenes/stairs.tscn" id="8_fll4c"]
+[ext_resource type="PackedScene" uid="uid://td30rl1m7tx7" path="res://scenes/floors/floor_tile_small_weeds_a.tscn" id="9_m6n2v"]
+[ext_resource type="PackedScene" uid="uid://di5lq6vmergvx" path="res://scenes/floors/floor_tile_small_weeds_b.tscn" id="10_k1o4e"]
+[ext_resource type="PackedScene" uid="uid://juacl8k4x6wh" path="res://scenes/floors/floor_tile_large.tscn" id="11_r3owx"]
+[ext_resource type="PackedScene" uid="uid://sbt7100g4yns" path="res://scenes/floors/floor_tile_large_rocks.tscn" id="12_k1o4e"]
+[ext_resource type="PackedScene" uid="uid://c4n4a6d6fts41" path="res://scenes/pillar.tscn" id="13_4kn2o"]
+[ext_resource type="PackedScene" uid="uid://c7116u6kwj83y" path="res://scenes/wall_arched.tscn" id="14_utctw"]
+[ext_resource type="PackedScene" uid="uid://cq6avnok7y17b" path="res://scenes/wall_broken.tscn" id="15_wxjgh"]
+[ext_resource type="PackedScene" uid="uid://bmd3g8xif3ru1" path="res://scenes/wall_corner.tscn" id="16_0mlrt"]
+[ext_resource type="PackedScene" uid="uid://ctfgdq35844cx" path="res://scenes/wall_cracked.tscn" id="17_pd8po"]
+[ext_resource type="PackedScene" uid="uid://b4l45yobuwlgd" path="res://scenes/wall_crossing.tscn" id="18_75emy"]
+[ext_resource type="PackedScene" uid="uid://c6jdobiwdmstr" path="res://scenes/wall_endcap.tscn" id="19_sg0d8"]
+[ext_resource type="PackedScene" uid="uid://c8xp7pkdett33" path="res://scenes/wall_half_endcap.tscn" id="20_chp4q"]
+[ext_resource type="PackedScene" uid="uid://8ni6ipiqhs4x" path="res://scenes/floors/floor_tile_extralarge_grates.tscn" id="21_2r3u5"]
 
 [node name="struchter one" type="Node3D"]
 
 [node name="rubble_large" parent="." instance=ExtResource("1_mkg55")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.33621502, 0, 0.41657645)
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -0.663785, 0, 0.41657645)
+
+[node name="rubble_large2" parent="." instance=ExtResource("1_mkg55")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.33621502, 2, 0.41657645)
 
 [node name="rubble_half" parent="." instance=ExtResource("2_wghwv")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.4094014, 0, 0.46363163)
 
 [node name="floor_dirt_small_weeds" parent="." instance=ExtResource("3_wghwv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 2, -1)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 4, -1)
 
 [node name="floor_dirt_large" parent="." instance=ExtResource("4_rlkdy")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 2, -2)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 4, -2)
 
 [node name="floor_dirt_large_rocky" parent="." instance=ExtResource("5_r6xa6")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 2, -6)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 4, -6)
 
 [node name="floor_dirt_small_A" parent="." instance=ExtResource("6_fll4c")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 2, -3)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 4, -3)
 
 [node name="floor_dirt_small_weeds2" parent="." instance=ExtResource("3_wghwv")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 2, 2, -5)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 2, 4, -5)
+
+[node name="floor_dirt_small_weeds3" parent="." instance=ExtResource("3_wghwv")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -2, 4, -4)
+
+[node name="trunk_large_C" parent="." instance=ExtResource("7_r6xa6")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -14, 4, -8)
+
+[node name="stairs" parent="." instance=ExtResource("8_fll4c")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 3, 0, -2)
+
+[node name="rubble_half2" parent="." instance=ExtResource("2_wghwv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.4094014, 0, -4.5363684)
+
+[node name="rubble_large3" parent="." instance=ExtResource("1_mkg55")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 4.336215, 0, -8.583424)
+
+[node name="rubble_large4" parent="." instance=ExtResource("1_mkg55")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 3.336215, 2, -7.5834236)
+
+[node name="floor_tile_small_weeds_A" parent="." instance=ExtResource("9_m6n2v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 4, -7)
+
+[node name="floor_tile_small_weeds_B" parent="." instance=ExtResource("10_k1o4e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 4, -1)
+
+[node name="floor_tile_large" parent="." instance=ExtResource("11_r3owx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 4, -10)
+
+[node name="floor_tile_large_rocks" parent="." instance=ExtResource("12_k1o4e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 4, -16)
+
+[node name="floor_dirt_large2" parent="." instance=ExtResource("4_rlkdy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 4, -10)
+
+[node name="floor_dirt_large_rocky2" parent="." instance=ExtResource("5_r6xa6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 4, -8)
+
+[node name="floor_dirt_small_weeds4" parent="." instance=ExtResource("3_wghwv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 4, -7)
+
+[node name="floor_dirt_small_weeds5" parent="." instance=ExtResource("3_wghwv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 4, -11)
+
+[node name="pillar" parent="." instance=ExtResource("13_4kn2o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 4, -15)
+
+[node name="wall_arched" parent="." instance=ExtResource("14_utctw")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 3, 4, -16)
+
+[node name="wall_broken" parent="." instance=ExtResource("15_wxjgh")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 3, 4, -12)
+
+[node name="wall_corner" parent="." instance=ExtResource("16_0mlrt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 4, -10)
+
+[node name="wall_cracked" parent="." instance=ExtResource("17_pd8po")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 4, -10)
+
+[node name="wall_crossing" parent="." instance=ExtResource("18_75emy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 4, -10)
+
+[node name="wall_endcap" parent="." instance=ExtResource("19_sg0d8")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -1, 4, -8)
+
+[node name="wall_half_endcap" parent="." instance=ExtResource("20_chp4q")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 3, 4, -8)
+
+[node name="wall_broken2" parent="." instance=ExtResource("15_wxjgh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 4, -10)
+
+[node name="wall_corner2" parent="." instance=ExtResource("16_0mlrt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 4, -20)
+
+[node name="rubble_large5" parent="." instance=ExtResource("1_mkg55")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -6.663785, 0, 0.41657645)
+
+[node name="rubble_large6" parent="." instance=ExtResource("1_mkg55")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.663785, 2, 0.41657645)
+
+[node name="rubble_large7" parent="." instance=ExtResource("1_mkg55")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -12.663785, 0, 0.41657645)
+
+[node name="rubble_large8" parent="." instance=ExtResource("1_mkg55")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.663785, 2, 0.41657645)
+
+[node name="wall_corner3" parent="." instance=ExtResource("16_0mlrt")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -13, 4, -6)
+
+[node name="floor_tile_extralarge_grates" parent="." instance=ExtResource("21_2r3u5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 4, -16)
+
+[node name="floor_tile_small_weeds_B2" parent="." instance=ExtResource("10_k1o4e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 4, -13)
+
+[node name="floor_dirt_large_rocky3" parent="." instance=ExtResource("5_r6xa6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 4, -2)
+
+[node name="floor_dirt_large3" parent="." instance=ExtResource("4_rlkdy")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -5, 4, -5)
+
+[node name="wall_cracked2" parent="." instance=ExtResource("17_pd8po")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17, 4, -6)
+
+[node name="wall_cracked3" parent="." instance=ExtResource("17_pd8po")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 4, -20)
+
+[node name="wall_arched2" parent="." instance=ExtResource("14_utctw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 4, -20)
+
+[node name="wall_broken3" parent="." instance=ExtResource("15_wxjgh")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -13, 4, -14)
+
+[node name="floor_tile_small_weeds_A2" parent="." instance=ExtResource("9_m6n2v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 4, -11)
+
+[node name="floor_tile_small_weeds_A3" parent="." instance=ExtResource("9_m6n2v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 4, -19)
+
+[node name="floor_dirt_large5" parent="." instance=ExtResource("4_rlkdy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 4, -6)
+
+[node name="floor_dirt_large4" parent="." instance=ExtResource("4_rlkdy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 4, -2)
+
+[node name="floor_dirt_small_weeds6" parent="." instance=ExtResource("3_wghwv")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -10, 4, -9)
+
+[node name="floor_dirt_small_A2" parent="." instance=ExtResource("6_fll4c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 2.08, -12, 4, -8)

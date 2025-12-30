@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://ctbc3kotssjnj"]
+
+[ext_resource type="PackedScene" uid="uid://c8gyc01gxjqd4" path="res://assits/Assets/fbx/bed_floor.fbx" id="1_sja36"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_pjm3r"]
+size = Vector3(1.4938965, 0.22045898, 2.9542236)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xvyak"]
+size = Vector3(1.7209473, 0.59588623, 3.1699219)
+
+[node name="bed_floor" instance=ExtResource("1_sja36")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.10430157, 0.010573864)
+shape = SubResource("BoxShape3D_pjm3r")
+
+[node name="Area3D" type="Area3D" parent="." index="2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.28870082, 0)
+shape = SubResource("BoxShape3D_xvyak")

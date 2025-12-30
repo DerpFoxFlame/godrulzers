@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://cq5w86ugoljab"]
+[gd_scene load_steps=4 format=3 uid="uid://cq5w86ugoljab"]
 
 [ext_resource type="PackedScene" uid="uid://n4uxsakjtgg" path="res://scenes/floors/floor_wood_large.tscn" id="1_72f28"]
 [ext_resource type="PackedScene" uid="uid://bnall7xjq30bb" path="res://scenes/table_long.tscn" id="2_habjk"]
+[ext_resource type="PackedScene" uid="uid://cmib6xffyu5rs" path="res://scenes/trunk_large_a.tscn" id="3_habjk"]
 
 [node name="auto build base one" type="Node3D"]
 
@@ -81,3 +82,6 @@ transform = Transform3D(0.9999978, 0.0002761038, 0.002076545, -0.0002684386, 0.9
 
 [node name="table_long" parent="flor" instance=ExtResource("2_habjk")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 8)
+
+[node name="trunk_large_A" parent="." instance=ExtResource("3_habjk")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -11, 0, 10)
